@@ -28,6 +28,7 @@ noscript {
     background-color: var(--color-dark-mode)
 }
 
+
 .main,
 body {
     overflow-x: hidden
@@ -537,9 +538,8 @@ noscript {
 .dp::before {
     height: 300px;
     z-index: -2;
-    content: ""
+    content: "";
 }
-
 .main {
     width: 100%;
     height: fit-content;
@@ -1022,23 +1022,26 @@ noscript {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    position: relative
+    position: relative;
+    border-radius: 50%;
 }
 
 .dp::before {
-    box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent
+    box-shadow: 2px 2px 0 inset whit, -2px -2px 0 inset transparent
 }
 
 .dp::after {
-    box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff
+    box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset whit
 }
 
 .dp:hover::after {
-    transform: translate(20px, 20px)
+    transform: translate(20px, 20px);
+    box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff;
 }
 
 .dp:hover::before {
-    transform: translate(-20px, -20px)
+    transform: translate(-20px, -20px);
+    box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent;
 }
 
 .skills-section-container {
@@ -1208,13 +1211,15 @@ footer {
 .image-div {
     width: 50%;
     height: 100%;
-    padding-top: 70px;
-    padding-left: 10px
+    padding-top: 100px;
+    padding-left: 10px;
 }
 
 .image-div img {
     height: 100%;
-    border-top-left-radius: 30px
+    border-top-left-radius: 30px;
+    width: 100%;
+    
 }
 
 .ProjectHeading {
